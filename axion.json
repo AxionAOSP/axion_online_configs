@@ -1,0 +1,38 @@
+{
+  "NtMemoryManager": {
+    "boostCameraDuration": 5000,
+    "killProcessCount": 20,
+    "killProcessCountWarmStart": 5,
+    "releaseMemoryDuration": 3600000,
+    "releaseMemoryKillCount": 5,
+    "weight": 10.0,
+    "releaseAdj": 900,
+    "releaseWhitelist": [
+      "com.google.android.googlequicksearchbox:search",
+      "com.google.android.gms",
+      "com.android.chrome",
+      "com.android.axion.widgets",
+      "com.android.edge.bar"
+    ],
+    "ramConfigs": {
+      "6GB": {
+        "killProcessCount": 15,
+        "killProcessCountWarmStart": 5,
+        "releaseMemoryKillCount": 20,
+        "releaseAdj": 900
+      },
+      "8GB": {
+        "killProcessCount": 15,
+        "killProcessCountWarmStart": 5,
+        "releaseMemoryKillCount": 20,
+        "releaseAdj": 900
+      },
+      "12GB": {
+        "killProcessCount": 5,
+        "killProcessCountWarmStart": 5,
+        "releaseMemoryKillCount": 10,
+        "releaseAdj": 900
+      }
+    }
+  }
+}
